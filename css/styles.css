@@ -8,6 +8,14 @@ body {
   color: black;
 }
 
+.title {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 1px;
+  border-style: solid;
+}
+
 h1 {
   font-family: "Doto", sans-serif;
   font-weight: 800;
@@ -22,21 +30,25 @@ h3 {
   font-size: 15pt;
 }
 
-header {
-  background-color: rgba(255, 255, 255, 0.5);
+.row {
   margin: 20px;
   padding: 10px;
-  border-radius: 15px;
+}
+
+nav.row {
+  margin: 0px 20px;
+  background: #9CD941;
+  background: linear-gradient(0deg, rgba(156, 217, 65, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  border-radius: 15px 15px 0px 0px;
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px;
   border-style: solid;
 }
 
-.row {
+main.row {
+  margin: 0px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 20px;
-  padding: 10px;
-  border-radius: 15px;
+  border-radius: 0px 0px 15px 15px;
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px;
   border-style: solid;
