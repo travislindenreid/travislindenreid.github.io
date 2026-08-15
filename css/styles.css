@@ -13,12 +13,13 @@ body {
   border-radius: 15px;
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px;
-  border-style: solid;
+  border-style: outset;
 }
 
 h1 {
   font-family: "Doto", sans-serif;
   font-weight: 800;
+  padding:10px;
 }
 
 h2 {
@@ -32,7 +33,6 @@ h3 {
 
 .row {
   margin: 20px;
-  padding: 10px;
 }
 
 nav.row {
@@ -42,7 +42,9 @@ nav.row {
   border-radius: 15px 15px 0px 0px;
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px;
-  border-style: solid;
+  border-style: outset;
+  min-height: 40px;
+  padding:10px;
 }
 
 main.row {
@@ -51,7 +53,8 @@ main.row {
   border-radius: 0px 0px 15px 15px;
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px;
-  border-style: solid;
+  border-style: outset;
+  padding:10px;
 }
 
 article {
@@ -61,7 +64,7 @@ article {
   border-radius: 5px;
   border-color: rgba(175, 175, 175, 0.8);
   border-width: 1px;
-  border-style: solid;
+  border-style: outset;
 }
 
 #noResults {
