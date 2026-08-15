@@ -25,12 +25,14 @@ EMAIL: lindenr@uci.edu
 </head>
 <body>
   <main class="container">
+    <header class="row">
+      <h1>Game Course In-Class Activities</h1>
+    </header>
     <div class="row">
-
       <nav class="col-md-3 col-sm-12">
-        <h1>Filters</h1>
-        <p>Results: <span id="resultCount"></span></p>
-        <p>Filter by subject</p>
+        <h2>Filters</h2>
+        <p>Results: <span id="resultCount">4</span></p>
+        <h3>Filter by subject</h3>
         <form id="subjectFilters">
           <input type="checkbox" id="eng" name="engineering" value="Engineering" onclick="refreshCount()">
           <label for="eng"> Engineering</label><br>
@@ -40,7 +42,7 @@ EMAIL: lindenr@uci.edu
           <label for="des"> Design</label><br>
         </form>
         <p><button onclick="clearFilters('subjectFilters')">Clear</button></p>
-        <p>Filter by participant equipment requirements</p>
+        <h3>Filter by participant equipment requirements</h3>
         <form id="equipmentFilters">
           <input type="checkbox" id="lap" name="laptop" value="Laptops" onclick="refreshCount()">
           <label for="lap"> Laptops</label><br>
@@ -52,7 +54,6 @@ EMAIL: lindenr@uci.edu
       </nav>
 
       <section class="col-md-9 col-sm-12">
-        <h1>Activities</h1>
         <article class="engineering laptop">
           <h2>Idea 1</h2>
           <h3>Subjects: engineering</h3>
