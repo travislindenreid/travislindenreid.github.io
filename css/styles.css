@@ -1,8 +1,10 @@
 body {
-  background-color: grey;
+  background-color: #90BF49;
+  background-repeat: no-repeat;
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: black;
 }
 
 h1 {
@@ -16,7 +18,8 @@ h2 {
 }
 
 .row {
-  background-color: lightblue;
+  background-color: white;
+  opacity: 0.5;
 }
 
 #noResults {
