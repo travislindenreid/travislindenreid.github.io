@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Travis Reid
+EMAIL: lindenr@uci.edu
+-->
+
+<!--
+dark blue: #1F64BF
+medium blue: #2585D9
+light blue: #A7D5F2
+saturated green: #9CD941
+desaturated green: #90BF49
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Travis Reid">
+  <meta name="description" content="In-class activities for video game related courses.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="filter.js"></script>
+  <title>In-Class Activity Library for Games</title>
+
+</head>
+<body class="container">
+
+    <header class="row">
+      <h1 class="title col-12">Game Course In-Class Activities</h1>
+    </header>
+
+    <nav class="row">
+    </nav>
+
+    <main class="row">
+      <aside class="col-md-3 col-sm-12">
+        <h2>Filters</h2>
+        <p>Results: <span id="resultCount">4</span></p>
+        <h3>Filter by subject</h3>
+        <form id="subjectFilters">
+          <input type="checkbox" id="eng" name="engineering" value="Engineering" onclick="refreshCount()">
+          <label for="eng"> Engineering</label><br>
+          <input type="checkbox" id="hum" name="humanities" value="Humanities" onclick="refreshCount()">
+          <label for="hum"> Humanities</label><br>
+          <input type="checkbox" id="des" name="design" value="Design" onclick="refreshCount()">
+          <label for="des"> Design</label><br>
+        </form>
+        <p><button onclick="clearFilters('subjectFilters')">Clear</button></p>
+        <h3>Filter by participant equipment requirements</h3>
+        <form id="equipmentFilters">
+          <input type="checkbox" id="lap" name="laptop" value="Laptops" onclick="refreshCount()">
+          <label for="lap"> Laptops</label><br>
+          <input type="checkbox" id="non" name="none" value="None" onclick="refreshCount()">
+          <label for="non"> None</label><br>
+        </form>
+        <p><button onclick="clearFilters('equipmentFilters')">Clear</button></p>
+        <p><button onclick="filter()">Apply</button></p>
+      </aside>
+
+      <section class="col-md-9 col-sm-12">
+        <article class="engineering laptop">
+          <h2>Idea 1</h2>
+          <h3>Subjects: engineering</h3>
+          <h3>Equipment: laptop</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
+        </article>
+        <article class="engineering none">
+          <h2>Idea 2</h2>
+          <h3>Subjects: engineering</h3>
+          <h3>Equipment: none</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
+        </article>
+        <article class="humanities design none">
+          <h2>Idea 3</h2>
+          <h3>Subjects: humanities, design</h3>
+          <h3>Equipment: none</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
+        </article>
+        <article class="design none">
+          <h2>Idea 4</h2>
+          <h3>Subjects: design</h3>
+          <h3>Equipment: none</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
+        </article>
+        <article id="noResults">
+          <p>No activities were found with the combination of filters chosen.</p>
+        </article>
+      </section>
+
+    </main>
+</body class="container">
+</html>
