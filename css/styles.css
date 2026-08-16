@@ -59,6 +59,10 @@ h3 {
   border-style: outset;
   color: #1F64BF;
   text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12pt;
+  padding: 0px 5px;
 }
 
 nav.row {
@@ -71,6 +75,47 @@ nav.row {
   border-style: outset;
   min-height: 40px;
   padding: 10px 10px 0px 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline;
+  width: max-content;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: max-content;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1.0);
+  border-color: rgba(255, 255, 255, 1.0);
+  border-width: 1px;
+  border-style: outset;
+  color: #1F64BF;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12pt;
+  color: #1F64BF;
+  text-decoration: none;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown-content:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 aside {
