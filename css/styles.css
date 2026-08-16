@@ -1,3 +1,15 @@
+/*
+WRITTEN BY: Travis Reid
+*/
+
+/*
+dark blue: #1F64BF
+medium blue: #2585D9
+light blue: #A7D5F2
+saturated green: #9CD941
+desaturated green: #90BF49
+*/
+
 body {
   background-color: #90BF49;
   background-repeat: no-repeat;
@@ -20,11 +32,13 @@ h1 {
   font-family: "Doto", sans-serif;
   font-weight: 800;
   padding:10px;
+  font-size: 25pt;
 }
 
 h2 {
   font-family: "Doto", sans-serif;
   font-weight: 600;
+  font-size: 20pt;
 }
 
 h3 {
@@ -33,6 +47,18 @@ h3 {
 
 .row {
   margin: 20px;
+}
+
+.navbutton {
+  width: max-content;
+  margin: 5px 5px 0px 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 1.0);
+  border-width: 1px;
+  border-style: outset;
+  color: #1F64BF;
+  text-decoration: none;
 }
 
 nav.row {
@@ -44,7 +70,18 @@ nav.row {
   border-width: 1px;
   border-style: outset;
   min-height: 40px;
-  padding:10px;
+  padding: 10px 10px 0px 20px;
+}
+
+aside {
+  margin: 0px;
+  padding: 10px;
+  background-color: rgba(250, 250, 250, 0.8);
+  border-radius: 5px;
+  border-color: rgba(175, 175, 175, 0.8);
+  border-width: 1px;
+  border-style: outset;
+  height: max-content;
 }
 
 main.row {
@@ -54,11 +91,11 @@ main.row {
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px;
   border-style: outset;
-  padding:10px;
+  padding:20px;
 }
 
 article {
-  margin: 10px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 10px;
   background-color: rgba(250, 250, 250, 0.8);
   border-radius: 5px;
