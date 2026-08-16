@@ -20,6 +20,15 @@ body {
   color: black;
 }
 
+a {
+  color: #1F64BF;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
 .title {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
@@ -97,12 +106,10 @@ nav.row {
   border-color: rgba(255, 255, 255, 1.0);
   border-width: 1px;
   border-style: outset;
-  color: #1F64BF;
   text-decoration: none;
   font-weight: 500;
   font-style: normal;
   font-size: 12pt;
-  color: #1F64BF;
   text-decoration: none;
 }
 
@@ -149,6 +156,20 @@ article {
   border-style: outset;
 }
 
+section.fullpage {
+  padding: 0px;
+}
+
+article.fullpage {
+  padding: 15px;
+}
+
 #noResults {
   display:none;
+}
+
+#tourphoto {
+  width: 400px;
+  float: left;
+  margin: 0px 10px 0px 0px;
 }
