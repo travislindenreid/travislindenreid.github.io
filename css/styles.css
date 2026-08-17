@@ -8,6 +8,18 @@ neon pink: #D941B4
 neon purple: #8941D9
 */
 
+@font-face {
+    font-family: 'Neuropol';
+    src: url('../fonts/Neuropol-Regular.eot');
+    src: url('../fonts/Neuropol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Neuropol-Regular.woff2') format('woff2'),
+        url('../fonts/Neuropol-Regular.woff') format('woff'),
+        url('../fonts/Neuropol-Regular.ttf') format('truetype'),
+        url('../fonts/Neuropol-Regular.svg#Neuropol-Regular') format('svg');
+    font-weight: normal;
+    font-display: swap;
+}
+
 body {
   background-color: rgb(144, 191, 73);
   background:linear-gradient(0deg, rgba(156, 217, 65, 0.5) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%), url("../assets/grid.jpg");
@@ -46,15 +58,13 @@ em {
 }
 
 h1 {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 600;
+  font-family: "Neuropol", sans-serif;
   padding:10px;
   font-size: 25pt;
 }
 
 h2 {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 400;
+  font-family: "Neuropol", sans-serif;
   font-size: 20pt;
 }
 
@@ -167,8 +177,7 @@ footer {
   border-style: outset;
   padding:10px;
   font-size: 8pt;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 400;
+  font-family: "Neuropol", sans-serif;
 }
 
 main.row {
