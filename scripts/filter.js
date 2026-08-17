@@ -12,9 +12,6 @@ function clearFilters(id)
 
 function filter ()
 {
-    var validArticles = [];
-    var invalidArticles = [];
-
     var subjectForm = document.getElementById("subjectFilters");
     let validSubjects = getCheckedOptions(subjectForm);
 
