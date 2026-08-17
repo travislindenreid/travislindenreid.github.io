@@ -205,3 +205,11 @@ dl {
 dt {
   display: list-item;
 }
+
+h2 {
+  margin: 10px 0px;
+}
+
+h2:first-child {
+  margin-top:0px;
+}
