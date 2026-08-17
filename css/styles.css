@@ -54,6 +54,11 @@ h3 {
   font-size: 15pt;
 }
 
+h4 {
+  font-size: 15pt;
+  font-style: italic;
+}
+
 .row {
   margin: 20px;
 }
@@ -136,6 +141,13 @@ aside {
   height: max-content;
 }
 
+aside.gameimg {
+  background-color: rgba(1,1,1,0.0);
+  margin: 0px;
+  padding: 0px;
+  border-style: none;
+}
+
 footer {
   margin: 0px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.25);
@@ -167,7 +179,7 @@ article {
   border-style: outset;
 }
 
-figure {
+figure.decorimg {
   float: left;
   width: 30%;
   margin: 0px 20px 0px 0px;
@@ -175,6 +187,7 @@ figure {
 
 figure img {
   width: 100%;
+  border-radius: 5px;
 }
 
 figure figcaption {
@@ -182,6 +195,11 @@ figure figcaption {
   vertical-align: bottom;
   font-style: italic;
   font-size: 10pt;
+}
+
+figure.gamelink {
+  display: inline-block;
+  width: 30%;
 }
 
 article.fullpage {
@@ -207,7 +225,7 @@ dt {
 }
 
 h2 {
-  margin: 10px 0px;
+  margin: 20px 0px 10px 0px;
 }
 
 h2:first-child {
