@@ -156,6 +156,23 @@ article {
   border-style: outset;
 }
 
+figure {
+  float: left;
+  width: 30%;
+  margin: 0px 20px 0px 0px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure figcaption {
+  position: relative;
+  vertical-align: bottom;
+  font-style: italic;
+  font-size: 10pt;
+}
+
 section.fullpage {
   padding: 0px;
 }
@@ -166,10 +183,4 @@ article.fullpage {
 
 #noResults {
   display:none;
-}
-
-#tourphoto {
-  width: 400px;
-  float: left;
-  margin: 0px 10px 0px 0px;
 }
