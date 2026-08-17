@@ -56,7 +56,10 @@ EMAIL: lindenr@uci.edu
       <aside class="col-md-3 col-sm-12">
         <h2>Filters</h2>
         <p>Results: <span id="resultCount">4</span></p>
-        <h3>Filter by subject</h3>
+        <p>
+          <h3 class="filterheader">Filter by subject</h3>
+          <button onclick="clearFilters('subjectFilters')" class="filterclearbutton">Clear</button>
+        </p>
         <form id="subjectFilters">
           <input type="checkbox" id="eng" name="engineering" value="Engineering" onclick="filter()">
           <label for="eng"> Engineering</label><br>
@@ -65,15 +68,16 @@ EMAIL: lindenr@uci.edu
           <input type="checkbox" id="des" name="design" value="Design" onclick="filter()">
           <label for="des"> Design</label><br>
         </form>
-        <p><button onclick="clearFilters('subjectFilters')">Clear</button></p>
-        <h3>Filter by participant equipment requirements</h3>
+        <p>
+          <h3 class="filterheader">Filter by equipment</h3>
+          <button onclick="clearFilters('equipmentFilters')" class="filterclearbutton">Clear</button>
+        </p>
         <form id="equipmentFilters">
           <input type="checkbox" id="lap" name="laptop" value="Laptops" onclick="filter()">
           <label for="lap"> Laptops</label><br>
           <input type="checkbox" id="non" name="none" value="None" onclick="filter()">
           <label for="non"> None</label><br>
         </form>
-        <p><button onclick="clearFilters('equipmentFilters')">Clear</button></p>
       </aside>
 
       <section class="col-md-9 col-sm-12">
