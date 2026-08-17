@@ -197,9 +197,39 @@ figure figcaption {
   font-size: 10pt;
 }
 
-figure.gamelink {
+figure.gamelink{
   display: inline-block;
   width: 30%;
+  position: relative;
+}
+
+figure.gamelink img{
+  transition: 0.5s ease;
+}
+
+figcaption.gamelinktext {
+  opacity: 0.0;
+  transition: 0.5s ease;
+  z-index: 5;
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15pt;
+  color: black;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+figure.gamelink img:hover {
+  opacity: 0.3;
+}
+
+figure.gamelink:hover figcaption.gamelinktext {
+  opacity: 1.0;
+  color: black;
 }
 
 article.fullpage {
