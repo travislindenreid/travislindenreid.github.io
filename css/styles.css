@@ -136,6 +136,17 @@ aside {
   height: max-content;
 }
 
+footer {
+  margin: 0px 20px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 1px;
+  border-style: outset;
+  padding:10px;
+  font-size: 10pt;
+}
+
 main.row {
   margin: 0px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.5);
