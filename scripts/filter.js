@@ -12,22 +12,41 @@ function clearFilters(id)
 
 function filter ()
 {
-    var subjectForm = document.getElementById("subjectFilters");
-    let validSubjects = getCheckedOptions(subjectForm);
-
-    var equipmentForm = document.getElementById("equipmentFilters");
-    let validEquipment = getCheckedOptions(equipmentForm);
-
     var articles = document.getElementsByTagName("article");
     var numResults = 0;
+
+    // creates nested array where each entry is an array of the valid options from 1 filter category
+    var forms = document.getElementsByTagName("form");
+    var selectedOptionsByCategory = [];
+    for(let i = 0; i < forms.length; i++)
+    {
+        selectedOptionsByCategory.push(getSelectedOptions(forms[i]));
+    }
+
+    console.log("valid options: ");
+    for(let i = 0; i < selectedOptionsByCategory.length; i++)
+    {
+        console.log(selectedOptionsByCategory[i]);
+    }
+    
     for(let i = 0; i < articles.length; i++)
     {
         var article = articles[i];
 
-        let subjectValid = checkCategoryValid(article, validSubjects);
-        let equipmentValid = checkCategoryValid(article, validEquipment);
+        // check if article has at least ONE match in EVERY category
+        var valid = true;
+        for(let j = 0; j < selectedOptionsByCategory.length; j++)
+        {
+            valid = valid && checkArticleContainsAtLeastOne(article, selectedOptionsByCategory[j]);
 
-        if(subjectValid && equipmentValid)
+            if(!valid)
+            {
+                // exit early upon first category mismatch
+                break;
+            }
+        }
+
+        if(valid)
         {
             numResults++;
             showElement(article);
@@ -52,7 +71,7 @@ function filter ()
     count.innerHTML = numResults;
 }
 
-function getCheckedOptions (form)
+function getSelectedOptions (form)
 {
     var options = form.getElementsByTagName("input");
     checkedOptions = [];
@@ -63,16 +82,22 @@ function getCheckedOptions (form)
             checkedOptions.push(options[i].name);
         }
     }
+
+    // if NONE of the options for this category were checked
+    // then treat them all as valid
+    if(checkedOptions.length == 0)
+    {
+        for(let i = 0; i < options.length; i++)
+        {
+            checkedOptions.push(options[i].name);
+        }
+    }
+
     return checkedOptions;
 }
 
-function checkCategoryValid (article, validClasses)
+function checkArticleContainsAtLeastOne (article, validClasses)
 {
-    if(validClasses.length == 0)
-    {
-        return true;
-    }
-
     var subjectValid = false;
     for(let j = 0; j < validClasses.length; j++)
     {
