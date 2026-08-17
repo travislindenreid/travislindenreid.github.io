@@ -38,15 +38,15 @@ em {
 }
 
 h1 {
-  font-family: "Doto", sans-serif;
-  font-weight: 800;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
   padding:10px;
   font-size: 25pt;
 }
 
 h2 {
-  font-family: "Doto", sans-serif;
-  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
   font-size: 20pt;
 }
 
@@ -158,7 +158,9 @@ footer {
   border-width: 1px;
   border-style: outset;
   padding:10px;
-  font-size: 10pt;
+  font-size: 8pt;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
 }
 
 main.row {
