@@ -142,6 +142,7 @@ nav.row {
 
 .dropdown-content a {
   border-radius: 5px;
+  transition: 0.5s ease;
   display: block;
   padding: 5px 10px;
 }
