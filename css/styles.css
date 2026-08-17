@@ -128,7 +128,7 @@ nav.row {
 .dropdown-content a {
   border-radius: 5px;
   display: block;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .dropdown-content a:hover {
