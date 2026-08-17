@@ -4,6 +4,7 @@ WRITTEN BY: Travis Reid
 
 /*
 neon green: #9CD941 rgb(156, 217, 65)
+dark green: #3a5511
 neon pink: #D941B4
 neon purple: #8941D9
 */
@@ -36,6 +37,10 @@ body {
 
 a {
   color: #D941B4;
+}
+
+a:hover, a:visited:hover {
+  color: #3a5511;
 }
 
 a:visited {
