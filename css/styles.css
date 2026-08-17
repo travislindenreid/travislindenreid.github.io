@@ -3,16 +3,17 @@ WRITTEN BY: Travis Reid
 */
 
 /*
-dark blue: #1F64BF
-medium blue: #2585D9
-light blue: #A7D5F2
-saturated green: #9CD941
-desaturated green: #90BF49
+neon green: #9CD941 rgb(156, 217, 65)
+neon pink: #D941B4
+neon purple: #8941D9
 */
 
 body {
-  background-color: #90BF49;
+  background-color: rgb(144, 191, 73);
+  background:linear-gradient(0deg, rgba(156, 217, 65, 0.5) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%), url("../assets/grid.jpg");
+  background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: contain;
   font-family: "Rajdhani", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -21,7 +22,11 @@ body {
 }
 
 a {
-  color: #1F64BF;
+  color: #D941B4;
+}
+
+a:visited {
+  color: #8941D9;
 }
 
 em {
@@ -69,11 +74,11 @@ h4 {
   width: max-content;
   margin: 5px 5px 0px 5px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   border-color: rgba(255, 255, 255, 1.0);
   border-width: 1px;
   border-style: outset;
-  color: #1F64BF;
+  color: #D941B4;
   text-decoration: none;
   font-weight: 500;
   font-style: normal;
@@ -153,7 +158,7 @@ aside.gameimg {
 
 footer {
   margin: 0px 20px 20px 20px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(156, 217, 65, 0.5);
   border-radius: 15px;
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 4px 20px 0px rgba(254, 255, 255, 0.10);
@@ -167,7 +172,7 @@ footer {
 
 main.row {
   margin: 0px 20px 20px 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(156, 217, 65, 0.5);
   border-radius: 0px 0px 15px 15px;
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 3px 4px 5px rgba(0, 0, 0, 0.05), inset 0px 4px 12px 0px rgba(254, 255, 255, 0.20), 0px 4px 20px 0px rgba(254, 255, 255, 0.50);
@@ -191,11 +196,16 @@ figure.decorimg {
   float: left;
   width: 30%;
   margin: 0px 20px 0px 0px;
+  box-shadow: 0px 4px 20px 0px rgba(254, 255, 255, 0.50);
 }
 
 figure img {
   width: 100%;
   border-radius: 5px;
+  box-shadow: 0px 4px 20px 0px rgba(254, 255, 255, 0.50);
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 1px;
+  border-style: outset;
 }
 
 figure figcaption {
@@ -203,6 +213,14 @@ figure figcaption {
   vertical-align: bottom;
   font-style: italic;
   font-size: 10pt;
+  padding: 2px;
+  margin: 5px 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 20px 0px rgba(254, 255, 255, 0.10), 0px 4px 20px 0px rgba(254, 255, 255, 0.50);;
+  border-width: 1px;
+  border-style: outset;
 }
 
 figure.gamelink{
@@ -213,10 +231,14 @@ figure.gamelink{
 
 figure.gamelink img{
   transition: 0.5s ease;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 1px;
+  border-style: outset;
 }
 
 figcaption.gamelinktext {
   opacity: 0.0;
+  padding: 5px;
   transition: 0.5s ease;
   z-index: 5;
   position: absolute;
@@ -279,7 +301,7 @@ h2:first-child {
   border-color: rgba(255, 255, 255, 1.0);
   border-width: 1px;
   border-style: outset;
-  color: #1F64BF;
+  color: #D941B4;
   text-decoration: none;
   font-weight: 500;
   font-style: normal;
