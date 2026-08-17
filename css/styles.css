@@ -180,3 +180,17 @@ article.fullpage {
 #noResults {
   display:none;
 }
+
+ul {
+  padding-left: 40px;
+  list-style-type: square;
+}
+
+dl {
+  list-style-type: square;
+  padding-left: 40px;
+}
+
+dt {
+  display: list-item;
+}
