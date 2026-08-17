@@ -142,7 +142,7 @@ nav.row {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(156, 217, 65);
 }
 
 .dropdown:hover .dropdown-content {
@@ -237,6 +237,8 @@ figure.gamelink{
   display: inline-block;
   width: 30%;
   position: relative;
+  background: rgb(156, 217, 65);
+  border-radius: 5px;
 }
 
 figure.gamelink img{
