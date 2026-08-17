@@ -58,23 +58,22 @@ EMAIL: lindenr@uci.edu
         <p>Results: <span id="resultCount">4</span></p>
         <h3>Filter by subject</h3>
         <form id="subjectFilters">
-          <input type="checkbox" id="eng" name="engineering" value="Engineering" onclick="refreshCount()">
+          <input type="checkbox" id="eng" name="engineering" value="Engineering" onclick="filter()">
           <label for="eng"> Engineering</label><br>
-          <input type="checkbox" id="hum" name="humanities" value="Humanities" onclick="refreshCount()">
+          <input type="checkbox" id="hum" name="humanities" value="Humanities" onclick="filter()">
           <label for="hum"> Humanities</label><br>
-          <input type="checkbox" id="des" name="design" value="Design" onclick="refreshCount()">
+          <input type="checkbox" id="des" name="design" value="Design" onclick="filter()">
           <label for="des"> Design</label><br>
         </form>
         <p><button onclick="clearFilters('subjectFilters')">Clear</button></p>
         <h3>Filter by participant equipment requirements</h3>
         <form id="equipmentFilters">
-          <input type="checkbox" id="lap" name="laptop" value="Laptops" onclick="refreshCount()">
+          <input type="checkbox" id="lap" name="laptop" value="Laptops" onclick="filter()">
           <label for="lap"> Laptops</label><br>
-          <input type="checkbox" id="non" name="none" value="None" onclick="refreshCount()">
+          <input type="checkbox" id="non" name="none" value="None" onclick="filter()">
           <label for="non"> None</label><br>
         </form>
         <p><button onclick="clearFilters('equipmentFilters')">Clear</button></p>
-        <p><button onclick="filter()">Apply</button></p>
       </aside>
 
       <section class="col-md-9 col-sm-12">

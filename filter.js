@@ -7,36 +7,10 @@ function clearFilters(id)
         checkboxes[i].checked = false;
     }
 
-    refreshCount();
+    filter();
 }
 
 function filter ()
-{
-    let articleInfo = findValidArticles();
-
-    for(let i = 0; i < articleInfo.valid.length; i++)
-    {
-        showElement(articleInfo.valid[i]);
-    }
-
-    for(let i = 0; i < articleInfo.invalid.length; i++)
-    {
-        hideElement(articleInfo.invalid[i]);
-    }
-
-    var noResultsArticle = document.getElementById("noResults");
-    console.log("results: " + articleInfo.valid.length);
-    if(articleInfo.valid.length > 0)
-    {
-        hideElement(noResultsArticle);
-    }
-    else 
-    {
-        showElement(noResultsArticle);
-    }
-}
-
-function findValidArticles ()
 {
     var validArticles = [];
     var invalidArticles = [];
@@ -48,6 +22,7 @@ function findValidArticles ()
     let validEquipment = getCheckedOptions(equipmentForm);
 
     var articles = document.getElementsByTagName("article");
+    var numResults = 0;
     for(let i = 0; i < articles.length; i++)
     {
         var article = articles[i];
@@ -57,19 +32,27 @@ function findValidArticles ()
 
         if(subjectValid && equipmentValid)
         {
-            validArticles.push(article);
+            numResults++;
+            showElement(article);
         }
         else 
         {
-            invalidArticles.push(article);
+            hideElement(article);
         }
     }
 
-    const info = {
-        valid: validArticles,
-        invalid: invalidArticles
+    var noResultsArticle = document.getElementById("noResults");
+    if(numResults > 0)
+    {
+        hideElement(noResultsArticle);
     }
-    return info;
+    else 
+    {
+        showElement(noResultsArticle);
+    }
+
+    var count = document.getElementById("resultCount");
+    count.innerHTML = numResults;
 }
 
 function getCheckedOptions (form)
@@ -113,11 +96,4 @@ function hideElement (e)
 function showElement (e)
 {
     e.style.display = "block";
-}
-
-function refreshCount ()
-{
-    let articleResults = findValidArticles();
-    var count = document.getElementById("resultCount");
-    count.innerHTML = articleResults.valid.length;
 }
