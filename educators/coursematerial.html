@@ -22,13 +22,13 @@ EMAIL: lindenr@uci.edu
   <script src="../scripts/decor.js"></script>
   <script src="../scripts/filter.js"></script>
 
-  <title>In-Class Activity Library for Games</title>
+  <title>Course Materials - Travis Reid</title>
 
 </head>
 <body class="container">
 
     <header class="row">
-      <h1 class="title col-12">Game Course In-Class Activities</h1>
+      <h1 class="title col-12">Open-Source Course Materials</h1>
     </header>
 
     <nav class="row">
@@ -64,48 +64,34 @@ EMAIL: lindenr@uci.edu
           <button onclick="clearFilters('subjectFilters')" class="filterclearbutton">Clear</button>
         </p>
         <form id="subjectFilters">
-          <input type="checkbox" id="eng" name="engineering" value="Engineering" onclick="filter()">
-          <label for="eng"> Engineering</label><br>
-          <input type="checkbox" id="hum" name="humanities" value="Humanities" onclick="filter()">
-          <label for="hum"> Humanities</label><br>
-          <input type="checkbox" id="des" name="design" value="Design" onclick="filter()">
-          <label for="des"> Design</label><br>
+          <input type="checkbox" id="game" name="games" value="Games" onclick="filter()">
+          <label for="game"> Games</label><br>
+          <input type="checkbox" id="prog" name="programming" value="Programming" onclick="filter()">
+          <label for="prog"> Programming</label><br>
         </form>
         <p>
-          <h3 class="filterheader">Equipment</h3>
-          <button onclick="clearFilters('equipmentFilters')" class="filterclearbutton">Clear</button>
+          <h3 class="filterheader">Format</h3>
+          <button onclick="clearFilters('formatFilters')" class="filterclearbutton">Clear</button>
         </p>
-        <form id="equipmentFilters">
-          <input type="checkbox" id="lap" name="laptop" value="Laptops" onclick="filter()">
-          <label for="lap"> Laptops</label><br>
-          <input type="checkbox" id="non" name="none" value="None" onclick="filter()">
-          <label for="non"> None</label><br>
+        <form id="formatFilters">
+          <input type="checkbox" id="qrt" name="quarter" value="Quarter" onclick="filter()">
+          <label for="qrt"> Quarter (10-week)</label><br>
+          <input type="checkbox" id="sem" name="semester" value="Semester" onclick="filter()">
+          <label for="sem"> Semester (15-week)</label><br>
         </form>
       </aside>
 
       <section class="col-md-9 col-sm-12">
         <article class="engineering laptop">
-          <h2>Idea 1</h2>
-          <h3>Subjects: engineering</h3>
-          <h3>Equipment: laptop</h3>
+          <h2>GDIM 31: Intro to Programming for Games</h2>
+          <h3>Subjects: games, engineering</h3>
+          <h3>Format: quarter</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
         </article>
         <article class="engineering none">
-          <h2>Idea 2</h2>
-          <h3>Subjects: engineering</h3>
-          <h3>Equipment: none</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
-        </article>
-        <article class="humanities design none">
-          <h2>Idea 3</h2>
-          <h3>Subjects: humanities, design</h3>
-          <h3>Equipment: none</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
-        </article>
-        <article class="design none">
-          <h2>Idea 4</h2>
-          <h3>Subjects: design</h3>
-          <h3>Equipment: none</h3>
+          <h2>GDIM 32: Intermediate Programming for Games</h2>
+          <h3>Subjects: games, engineering</h3>
+          <h3>Equipment: quarter</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ipsum, interdum at dui at, varius porttitor lectus. Sed metus elit, hendrerit eget lectus a, placerat vestibulum ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris lacinia sollicitudin velit, nec aliquam augue. Pellentesque nisi risus, venenatis eu dapibus a, dignissim cursus metus. Nulla elementum consequat dictum. Suspendisse diam odio, interdum in vulputate ac, dapibus eget leo. Mauris vitae pharetra massa, eget blandit sem. Morbi dictum vestibulum tortor eu finibus. Morbi sit amet ante eu mauris convallis faucibus. Pellentesque leo erat, posuere vitae massa sit amet, posuere cursus libero. Nam vel arcu eu nibh lacinia finibus. Aenean vitae posuere metus. Phasellus ut vulputate odio. Maecenas ut pellentesque diam. Mauris nulla tortor, tempor a laoreet a, interdum a nunc.</p>
         </article>
         <article id="noResults">
