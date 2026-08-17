@@ -95,7 +95,6 @@ nav.row {
   position: relative;
   display: inline;
   width: max-content;
-  margin: 0px;
   padding: 0px;
 }
 
@@ -104,8 +103,8 @@ nav.row {
   position: absolute;
   z-index: 1;
   width: max-content;
-  margin: 0px 5px 0px 5px;
-  padding: 0px 5px;
+  margin: 0px 0px 0px 5px;
+  padding: 0px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1.0);
   border-color: rgba(255, 255, 255, 1.0);
@@ -119,10 +118,12 @@ nav.row {
 }
 
 .dropdown-content a {
+  border-radius: 5px;
   display: block;
+  padding: 5px;
 }
 
-.dropdown-content:hover {
+.dropdown-content a:hover {
   background-color: #ddd;
 }
 
