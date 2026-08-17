@@ -22,12 +22,6 @@ function filter ()
     {
         selectedOptionsByCategory.push(getSelectedOptions(forms[i]));
     }
-
-    console.log("valid options: ");
-    for(let i = 0; i < selectedOptionsByCategory.length; i++)
-    {
-        console.log(selectedOptionsByCategory[i]);
-    }
     
     for(let i = 0; i < articles.length; i++)
     {
