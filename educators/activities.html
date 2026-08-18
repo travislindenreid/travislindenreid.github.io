@@ -58,6 +58,11 @@ EMAIL: lindenr@uci.edu
 
     <main class="row">
       <aside class="col-md-3 col-sm-12">
+        <h2>How to use</h2>
+        <p>Augment or replace one of your lectures with an in-class acitivty from this database for <a href="activelearning.html">better learning outcomes.</a></p>
+        <p>The activities here were contributed by Travis and other educators. <a href="https://forms.gle/NvdHuQvGWRMUWdZX8" rel="external" target="_blank">Submit an activity here!</a></p>
+        <h2>License</h2>
+        <p>These activities are shared under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="external" target="_blank">Creative Commons Attribution-Non Commerical license.</a> Please credit the creator, and don't use this material for commerical purposes.</p>
         <h2>Filters</h2>
         <p>Results: <span id="resultCount">4</span></p>
         <p>
@@ -81,6 +86,20 @@ EMAIL: lindenr@uci.edu
           <label for="lap"> Laptops</label><br>
           <input type="checkbox" id="non" name="none" value="None" onclick="filter()">
           <label for="non"> None</label><br>
+        </form>
+        <p>
+          <h3 class="filterheader">Duration</h3>
+          <button onclick="clearFilters('durationFilters')" class="filterclearbutton">Clear</button>
+        </p>
+        <form id="durationFilters">
+          <input type="checkbox" id="quick" name="quick" value="Quick: 5 minutes or less" onclick="filter()">
+          <label for="quick"> Quick: 5 minutes or less</label><br>
+          <input type="checkbox" id="short" name="short" value="Short: 5 - 10 minutes" onclick="filter()">
+          <label for="short"> Short: 5 - 10 minutes</label><br>
+          <input type="checkbox" id="ext" name="extended" value="Extended: 10 - 20 minutes" onclick="filter()">
+          <label for="ext"> Extended: 10 - 20 minutes</label><br>
+          <input type="checkbox" id="sub" name="substantial" value="Substantial: over 20 minutes" onclick="filter()">
+          <label for="sub"> Substantial: over 20 minutes</label><br>
         </form>
       </aside>
 
